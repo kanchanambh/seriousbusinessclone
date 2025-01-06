@@ -33,3 +33,48 @@
     }
   }
   
+
+  .tracker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 75%;
+    padding: 2em 0;
+}
+
+
+.sphere1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px;
+  background: url("/sphere1.png") no-repeat 50% 50%;
+  background-size: cover;
+  border-radius: 100%;
+  display: flex;
+}
+
+.sphere2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 350px;
+  background: url("/sphere2.png") no-repeat 50% 50%;
+  background-size: cover;
+  border-radius: 100%;
+  display: flex;
+}
+
+.video-content {
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+  height: 300vh;
+  padding: 6em 2em;
+}

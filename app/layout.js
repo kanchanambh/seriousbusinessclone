@@ -22,9 +22,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-pink-300`}
       >
-        <main className="w-screen h-screen relative overflow-hidden">
+        <main className=" ">
           <div className="w-1/2 mx-auto p-1 float-right">
           <Navigation />
           </div>

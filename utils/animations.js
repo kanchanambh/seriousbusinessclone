@@ -14,6 +14,7 @@ export const animatePageIn = () => {
         yPercent: 100,
         stagger: 0.2,
         ease: "power2.out",
+        duration: 1,
       })
     }
   }
