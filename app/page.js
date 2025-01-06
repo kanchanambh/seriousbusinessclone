@@ -166,7 +166,7 @@ if (typeof window !== "undefined") {
       </div>
       <section className="video-content " >
             <div className="section-header">
-                <h1>Events</h1>
+                <h1>Video</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus at lacus nec lacinia. Aenean feugiat non lacus et cursus.</p>
             </div>
          
