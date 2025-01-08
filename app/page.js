@@ -163,7 +163,7 @@ const tl = gsap.timeline({
       // Recalculate the layout after page refresh and reset any issues with transforms
       gsap.set(heroReelWrapperRef, { clearProps: "transform" });
     },
-   markers:true
+   
   },
 
 });
