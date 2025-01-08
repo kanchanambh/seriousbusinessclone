@@ -81,7 +81,7 @@ const WorkPage = () => {
         className="text-[80px] absolute top-0 right-1/2 translate-x-1/2 font-bold text-black uppercase"
         style={{ display: "none" }} // Start by hiding the black text
       >
-         Main Logo Section
+         Main Logo 
       </h1>
 
       {/* White text */}
@@ -89,7 +89,7 @@ const WorkPage = () => {
         ref={textRef}
         className="text-[80px] absolute top-0 right-1/2 translate-x-1/2 font-bold text-white uppercase"
       >
-        Main Logo Section
+        Main Logo 
       </h1>
       <div
         ref={contentDivRef}
