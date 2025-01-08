@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body{
+  overflow: hidden;
+}
+
 .preloader {
     position: fixed;
     top: 0;
@@ -42,6 +46,7 @@
     width: 75%;
     height: 75%;
     padding: 2em 0;
+    z-index: 5;
 }
 
 
@@ -71,10 +76,41 @@
   display: flex;
 }
 
-.video-content {
-  position: absolute;
-  top: 100vh;
+
+
+.video_hero_reel{
+  display: flex;
+  pointer-events: none;
   width: 100%;
-  height: 300vh;
-  padding: 6em 2em;
+  align-items: center;
+  height: calc(797px);
+  
+}
+
+
+
+.hero_reel_video video{
+border-radius: .5rem;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.hero_reel_container{
+  cursor: none;
+  pointer-events: all;
+  position: relative;
+  transition: translate .8s cubic-bezier(0,.55,.45,1) 0s;
+  margin: 0px;
+}
+
+.hero_reel_wrapper{
+  display: flex;
+ 
+  width: 1856px; 
+  height: 797px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 1rem;
 }
