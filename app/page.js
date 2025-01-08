@@ -152,7 +152,7 @@ const tl = gsap.timeline({
   scrollTrigger: {
     trigger: heroReelWrapperRef.current,
     start: "100% 100%", // Start when the element reaches 10% of the viewport
-    end: "220% 100%", // End when the element reaches 10% from the bottom
+    end: "bottom 20%", // End when the element reaches 10% from the bottom
     scrub: 1, // Tie the animation to the scroll position
     pin:true,
     onEnter: () => {
@@ -163,7 +163,7 @@ const tl = gsap.timeline({
       // Recalculate the layout after page refresh and reset any issues with transforms
       gsap.set(heroReelWrapperRef, { clearProps: "transform" });
     },
-   //markers:true
+   markers:true
   },
 
 });
@@ -201,39 +201,43 @@ ScrollTrigger.refresh();
     <> 
     <ReactLenis root options={lenisOptions}>
     <BannerSection />
-    <div className="content w-full h-full">
+    <div className="content w-full h-full ">
    
     <div  ref={blackDivRef} className=" absolute w-full h-full top-0 left-0 right-0 bottom-0 bg-black flex items-start justify-center z-10"> </div>
     <h1
         ref={blackTextRef}
-        className="text-[80px] absolute top-0 right-1/2 translate-x-1/2 font-bold text-black uppercase z-20"
+        className="text-[80px] absolute top-0 right-1/2 translate-x-1/2 translate-y-1/2 font-bold text-black uppercase z-20"
         style={{ display: "none" }} // Start by hiding the black text
       >
-         Main Logo Section
+         Main Logo
       </h1>
 
       {/* White text */}
       <h1
         ref={textRef}
-        className="text-[80px] absolute top-0 right-1/2 translate-x-1/2 font-bold text-white uppercase z-20"
+        className="text-[80px] absolute top-0 right-1/2 translate-x-1/2 translate-y-1/2 font-bold text-white uppercase z-20"
       >
-        Main Logo Section
+        Main Logo
       </h1>
       
-      <div className=" h-screen w-full flex items-end" >
+      <div className=" h-full w-full flex items-end " >
       
 
         <div ref={trackerRef} className=" tracker" >
+          
+
+         
           <div ref={sphere1Ref} className="sphere1"></div>
           <div ref={sphere2Ref} className="sphere2"></div>
+
+         
         </div>
 
 
        <div ref={heroReelWrapperRef} className="hero_reel_wrapper flex items-end w-[90%] h-[85%] mb-10 ml-10"
        style={{
         margin: 'auto', // Set margin to auto to center the div horizontally
-        top:"0px",
-        paddingBottom:"50px"
+        padding:"50px"
       }}
        
        >
@@ -259,10 +263,10 @@ ScrollTrigger.refresh();
 
      
   
-  </div>
+
   <section style={{
           position: 'relative',
-          top: `${heroHeight + 200}px`, // Adding a little offset (e.g., 20px)
+          top: `${heroHeight}px`, // Adding a little offset (e.g., 20px)
           backgroundColor: 'red', // Just an example
         }} className=" ">
       <h1 className="text-4xl uppercase pb-5" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit urna, iaculis sed fermentum non, finibus vitae arcu.</h1>
@@ -282,6 +286,8 @@ ScrollTrigger.refresh();
         <h1 className="text-4xl uppercase pb-5" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit urna, iaculis sed fermentum non, finibus vitae arcu.</h1>
         <h1 className="text-4xl uppercase pb-5" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit urna, iaculis sed fermentum non, finibus vitae arcu.</h1>
       </section>
+
+      </div>    
   </ReactLenis>
   </>
   )

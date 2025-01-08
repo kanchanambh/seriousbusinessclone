@@ -42,7 +42,7 @@ html, body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) !important;
     width: 75%;
     height: 75%;
     padding: 2em 0;
@@ -54,9 +54,9 @@ html, body{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 450px;
-  height: 450px;
+  transform: translate(-50%, -50%) ;
+  width: 300px;
+  height: 300px;
   background: url("/sphere1.png") no-repeat 50% 50%;
   background-size: cover;
   border-radius: 100%;
@@ -68,8 +68,8 @@ html, body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   background: url("/sphere2.png") no-repeat 50% 50%;
   background-size: cover;
   border-radius: 100%;
@@ -109,7 +109,7 @@ border-radius: .5rem;
   display: flex;
  
   width: 1856px; 
-  height: 797px;
+  height: 100vh;
   margin: auto;
   overflow: hidden;
   border-radius: 1rem;
